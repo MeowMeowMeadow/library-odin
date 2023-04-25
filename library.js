@@ -7,7 +7,6 @@ let myLibrary = [
     }
 ];
 
-
 function Book(title, author, pages, readStatus)
 {
     this.title = title,
