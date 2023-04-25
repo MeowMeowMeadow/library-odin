@@ -3,9 +3,16 @@
     background-color: aqua;
 }
 
-.librarySection
+.header p, .header h3
 {
-    background-color: blue;
+    text-align: center;
+}
+
+.header h3
+{
+    font-size: 3rem;
+    font-weight: bold;
+    margin-bottom: 0;
 }
 
 body
@@ -13,5 +20,9 @@ body
     font-size: 1rem;
     font-family: Inter;
     height: 100%;
-    width: 50%;
+    width: 100%;
+    margin: 0;
+    padding: 0;
+    background-color: rgb(146, 146, 252);
+    display: grid;
 }
