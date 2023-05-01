@@ -17,12 +17,47 @@
         <h3>Meadow's Library</h3>
         <p>Please add a book to place it into the library</p>
     </div>
-    <div class="addBook">
-        <button>New Book</button>
-        <div class="bookForm hidden">
-        </div>
-    </div>
 
-    <div class="LibrarySection"></div>
+    <main>
+        <div class="addBook">
+            <button id="enableBookForm" onClick=displayForm()>New Book</button>
+            <div id="bookForm" class="bookForm hidden">
+                <form>
+                    <label for="bookTitle">Title:</label>
+                    <input type="text" id="bookTitle" name="bookTitle" required>
+                    <label for="bookAuthor">Author:</label>
+                    <input type="text" id="bookAuthor" name="bookAuthor" required>
+                    <label for="bookPages">Pages:</label>
+                    <input type="number" id="bookPages" name="bookPages" required>
+                    <label for="bookRead">Read?:</label>
+                    <input type="radio" id="readYes" name="bookRead" value="true"> Yes
+                    <input type="radio" id="readNo" name="bookRead" value="false"> No
+                </form>
+                <button id="addBook">Add Book</button>
+            </div>
+        </div>
+    
+        <div class="librarySection">
+            <table id="libraryTable">
+                <thead>
+                    <tr>
+                        <th>Book Title:</th>
+                        <th>Book's Author:</th>
+                        <th>Pages in Book:</th>
+                        <th>Has been read?:</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td>Test</td>
+                        <td>Test</td>
+                        <td>Test</td>
+                        <td>Test</td>
+                    </tr>
+                </tbody>
+            </table>
+        </div>
+    </main>
+    
 </body>
 </html>

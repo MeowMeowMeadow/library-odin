@@ -24,3 +24,13 @@ function displayLibrary()
 {
 
 }
+
+function displayForm()
+{
+    document.getElementById("bookForm").classList.remove('hidden');
+}
+
+function hideForm()
+{
+    document.getElementById("addBook").classList.add('hidden');
+}

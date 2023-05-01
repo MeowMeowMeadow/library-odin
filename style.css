@@ -1,6 +1,7 @@
 .header
 {
     background-color: aqua;
+    display: grid;
 }
 
 .header p, .header h3
@@ -25,4 +26,85 @@ body
     padding: 0;
     background-color: rgb(146, 146, 252);
     display: grid;
+}
+
+#libraryTable
+{
+    border: solid 2px black;
+    width: 100%;
+    text-align: left;
+}
+
+#libraryTable thead
+{
+    background-color:rgb(255, 92, 28);
+}
+
+#libraryTable tbody
+{
+    background-color:rgb(180, 241, 164);
+}
+
+tr.readRow
+{
+    background-color:rgb(252, 168, 72);
+}
+
+.addBook
+{
+    margin-top: 10px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.addBook button
+{   
+    padding: 5px;
+    text-align: center;
+    font-size: 1rem;
+    border: none;
+    text-decoration: none;
+    border-radius: 10px;
+    height: 2rem;
+    width: 6rem;
+    color: black;
+    font-weight: bold;
+    background-color:rgb(235, 252, 159);
+    margin: 10px;
+}
+
+.bookForm
+{
+    gap: 1rem;
+    box-shadow: 2px 2px 2px 2px black;
+    border-radius: 10%;
+    padding: 10px;
+    background-color:rgb(151, 255, 173);
+}
+
+.bookForm label
+{
+    font-weight: bold;
+    font-size: 1.5rem;
+    margin-bottom: 4px;
+}
+
+.bookForm input[type=text], .bookForm input[type=number]
+{
+    display: block;
+    border: none;
+    border-radius: 5px;
+    margin: 10px;
+    padding: 5px;
+}
+
+.hidden
+{
+    display: none;
+}
+
+.librarySection
+{
+    margin-top: 10px;
 }
