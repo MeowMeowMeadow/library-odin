@@ -28,21 +28,27 @@ body
     display: grid;
 }
 
+table, th, td
+{
+    border: solid 3px black;
+    border-collapse: collapse;
+}
+
 #libraryTable
 {
-    border: solid 2px black;
-    width: 100%;
-    text-align: left;
+    width: 100%; 
 }
 
 #libraryTable thead
 {
     background-color:rgb(255, 92, 28);
+    text-align: center;
 }
 
 #libraryTable tbody
 {
     background-color:rgb(180, 241, 164);
+    text-align: left;
 }
 
 tr.readRow
